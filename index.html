@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <title>Wanda - Eid Mubarak</title>
+
+  <link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-96f5da14bc71e5883d519b4eb5e93297dde552c2f91a97fcfb30035219cf1c1a.css" />
+  
+  <title>Wanda - Eid Mubarak</title>
+
+  <style>
+    html { font-size: 15px; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body { height:100%; display: flex; flex-direction: column; }
+    .referer-warning {
+      background: black;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      padding: 0.75em;
+      color: white;
+      text-align: center;
+      font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, system-ui, Sans-Serif;
+      line-height: 1.2;
+      font-size: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+    .referer-warning span { font-family: initial; }
+    .referer-warning h1 { font-size: 1.2rem; margin: 0; }
+    .referer-warning a { color: #56bcf9; }
+  </style>
+</head>
+
+<body class="">
+  <div class="referer-warning">
+    <h1><span>⚠️</span> Eid Mubarak 1444 H <span>⚠️</span></h1>
+    <br />
+  </div>
+
+  <div id="result-iframe-wrap" role="main">
+    <iframe
+      id="result"
+      srcdoc="<!DOCTYPE html>
+<html lang=&quot;en&quot; >
+
+<head>
+  <meta charset=&quot;UTF-8&quot;>
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=VT323&amp;display=swap');
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #020202;
+  font-family: 'VT323', monospace;
+}
+
+p {
+  max-width: 500px;
+  white-space: pre-line;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+  color: #05d1e1;
+  filter: drop-shadow(0 0 2px #e4d808);
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate=&quot;no&quot;>
+  <p>Eid Mubarak (عيد مبارك) ! May Allah's blessings and love fill your life with happiness and peace. May this joyous occasion bring you and your loved ones closer, and may all your prayers and wishes be granted. Let's celebrate this beautiful day with gratitude and appreciation for all the blessings in our lives. Eid Mubarak once again!
+  
+  Minal aidzin wal faizin mohon maaf lahir dan batin kalo ada kesalahan mohon dibicarakan dengan baik-baik bukan pergi mencari yang terbaik
+-Wanda
+</p>
+    <script src=&quot;https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js&quot;></script>
+
+  
+      <script id=&quot;rendered-js&quot; >
+function paragraph(element) {
+  const array = element.innerText.split('');
+  const special = ['~', '@', '!', '#', '$', '%', '^', '&amp;', '*'];
+  const exception = [' ', '\n', '.', ','];
+  const random = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  };
+
+  const numArray = [];
+  array.forEach(char => {
+    const num = random(5, 40);
+    numArray.push(num);
+  });
+
+  let completeCount;
+  let newText;
+  const timer = setInterval(() => {
+    completeCount = 0;
+    newText = '';
+    numArray.forEach((num, i) => {
+      if (exception.includes(array[i]) || numArray[i] === 0) {
+        newText += array[i];
+        completeCount += 1;
+      } else {
+        newText += special[numArray[i] % special.length];
+        numArray[i] = --num;
+      }
+    });
+
+    element.innerText = newText;
+    if (completeCount === numArray.length) clearInterval(timer);
+  }, 100);
+}
+
+const p = document.querySelector('p');
+paragraph(p);
+//# sourceURL=pen.js
+    </script>
+
+  
+</body>
+
+</html>"
+      sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write" allowTransparency="true"
+      allowpaymentrequest="true" allowfullscreen="true" class="result-iframe">
+      </iframe>
+  </div>
+
+</body>
+
+</html>
